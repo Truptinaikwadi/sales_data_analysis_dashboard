@@ -1,46 +1,95 @@
-## 📊 Sales Order Management Dashboard
 
-This project focuses on analyzing and managing sales order data using Excel and SQL.
-It aims to improve sales visibility, identify top-performing products/customers, and assist business decisions through data-driven insights.
+##🧾 Sales Data Analysis Dashboard
 
-## 💼 Tools & Technologies Used
-Tool / Technology	Purpose
-Microsoft Excel	Data cleaning, dashboard creation, and KPI visualization
-SQL (MySQL / SQL Server)	Data storage, transformation, and analysis through queries
-Power Query / Pivot Tables	Data modeling and aggregation
-GitHub	Version control and project sharing
+📊 Project Overview
 
-##⚙️ Project Workflow
+This project is a Sales Data Analysis Dashboard that provides insights into sales performance using SQL, Excel, and Python (Pandas).
+It helps visualize and analyze sales data across different dimensions such as city, category, payment mode, and order status
 
-Data Collection – Imported raw sales data (orders, customers, and products).
+##🎯 Objective
 
-Data Cleaning – Removed duplicates, handled null values, and standardized date & product formats.
+To analyze sales data efficiently and create a data-driven dashboard that helps understand:
 
-Data Analysis (SQL)
+Total and average sales performance
 
-Queried total revenue, order trends, and region-wise performance.
+Best performing city and category
 
-Identified top 5 products and customers by sales.
+Customer payment preferences
 
-Dashboard Creation (Excel)
-
-Interactive charts for sales trends, revenue by region, and product category analysis.
-
-KPI cards for total sales, profit margin, and order count.
+Order status distribution (Delivered vs Cancelled)
 
 
+##🧠 Tools and Technologies Used
 
-## 🧠 Learning Outcomes
+Tool	Purpose
 
-Strengthened understanding of data cleaning and transformation.
+SQL Server	Data extraction, transformation, and aggregation
+MS Excel	Interactive Dashboard and visualization
+Python (Pandas)	Exploratory data analysis and plotting
+Power Query / Pivot Table	Data cleaning and model creation in Excel
 
-Enhanced ability to write SQL queries for business analytics.
+🧩 Steps Involved
 
-Improved Excel visualization and dashboard design skills.
+1. Data Preparation
 
-## 🚀 Future Enhancements
+Imported raw sales data into SQL Server.
 
-Integrate with Python / Power BI for advanced analytics.
+Cleaned and filtered records to remove inconsistencies.
 
-Automate data updates using Python scripts.
+
+2. SQL Analysis
+
+Used SQL queries to extract key insights.
+
+
+3. Excel Dashboard
+
+Created an interactive dashboard using Pivot Tables, Slicers, and Charts to display:
+
+🏙 Sales by City
+
+💳 Payment Mode Preference
+
+📦 Category-wise Sales
+
+🚚 Order Status Distribution
+
+🏆 Top Performing City and Total Sales
+
+
+
+4. Python Analysis
+
+Used Pandas for deeper data analysis:
+
+payment_count = df['PaymentMode'].value_counts()
+
+# Monthly sales trend
+monthly_sales = df.groupby(df["OrderDate"].dt.to_period("M"))["total"].sum()
+
+# Sales by category
+category_sales = df.groupby("Category")["total"].sum()
+category_sales.plot(kind="bar", title="Sales by Category")
+plt.show(
+
+##📈 Key Insights
+
+Delhi recorded the highest total sales.
+
+Most preferred payment mode was UPI.
+
+Electronics category had the maximum revenue.
+
+Overall total sales = 295,200 units.
+
+
+##🚀 Future Enhancements
+
+Integrate Power BI for dynamic visualization.
+
+Automate data refresh using Python scripts.
+
+Add forecasting model for future sales prediction
+
+
 
