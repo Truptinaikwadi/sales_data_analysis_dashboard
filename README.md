@@ -44,8 +44,7 @@ Used SQL queries to extract key insights.
 
 3. Excel Dashboard
 
-![Project Screenshot](C:\Users\TRUPTI\OneDrive\Pictures\Screenshots)
-
+![Dashboard Screenshot](dashboard.png)
 
 Created an interactive dashboard using Pivot Tables, Slicers, and Charts to display:
 
