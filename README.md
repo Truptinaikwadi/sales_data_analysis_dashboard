@@ -1,12 +1,12 @@
 
-## 🧾 Sales Data Analysis Dashboard
+##  Sales Data Analysis Dashboard
 
-📊 Project Overview
+ Project Overview
 
 This project is a Sales Data Analysis Dashboard that provides insights into sales performance using SQL, Excel, and Python (Pandas).
 It helps visualize and analyze sales data across different dimensions such as city, category, payment mode, and order status
 
-## 🎯 Objective
+##  Objective
 
 To analyze sales data efficiently and create a data-driven dashboard that helps understand:
 
@@ -19,7 +19,7 @@ Customer payment preferences
 Order status distribution (Delivered vs Cancelled)
 
 
-## 🧠 Tools and Technologies Used
+##  Tools and Technologies Used
 
 Tool	Purpose
 
@@ -28,7 +28,7 @@ MS Excel	Interactive Dashboard and visualization
 Python (Pandas)	Exploratory data analysis and plotting
 Power Query / Pivot Table	Data cleaning and model creation in Excel
 
-🧩 Steps Involved
+ Steps Involved
 
 1. Data Preparation
 
@@ -48,15 +48,15 @@ Used SQL queries to extract key insights.
 
 Created an interactive dashboard using Pivot Tables, Slicers, and Charts to display:
 
-🏙 Sales by City
+ Sales by City
 
-💳 Payment Mode Preference
+ Payment Mode Preference
 
-📦 Category-wise Sales
+ Category-wise Sales
 
-🚚 Order Status Distribution
+ Order Status Distribution
 
-🏆 Top Performing City and Total Sales
+ Top Performing City and Total Sales
 
 
 
@@ -74,7 +74,7 @@ category_sales = df.groupby("Category")["total"].sum()
 category_sales.plot(kind="bar", title="Sales by Category")
 plt.show(
 
-## 📈 Key Insights
+##  Key Insights
 
 Delhi recorded the highest total sales.
 
@@ -85,7 +85,7 @@ Electronics category had the maximum revenue.
 Overall total sales = 295,200 units.
 
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 Integrate Power BI for dynamic visualization.
 
