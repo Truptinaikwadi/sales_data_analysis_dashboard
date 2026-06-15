@@ -3,7 +3,7 @@
 
  Project Overview
 
-This project is a Sales Data Analysis Dashboard that provides insights into sales performance using SQL, Excel, and Python (Pandas).
+This project is a Sales Data Analysis Dashboard that provides insights into sales performance using SQL, Excel.
 It helps visualize and analyze sales data across different dimensions such as city, category, payment mode, and order status
 
 ##  Objective
@@ -25,7 +25,6 @@ Tool	Purpose
 
 SQL Server	Data extraction, transformation, and aggregation
 MS Excel	Interactive Dashboard and visualization
-Python (Pandas)	Exploratory data analysis and plotting
 Power Query / Pivot Table	Data cleaning and model creation in Excel
 
  Steps Involved
@@ -58,21 +57,6 @@ Created an interactive dashboard using Pivot Tables, Slicers, and Charts to disp
 
  Top Performing City and Total Sales
 
-
-
-4. Python Analysis
-
-Used Pandas for deeper data analysis:
-
-payment_count = df['PaymentMode'].value_counts()
-
-# Monthly sales trend
-monthly_sales = df.groupby(df["OrderDate"].dt.to_period("M"))["total"].sum()
-
-# Sales by category
-category_sales = df.groupby("Category")["total"].sum()
-category_sales.plot(kind="bar", title="Sales by Category")
-plt.show(
 
 ##  Key Insights
 
